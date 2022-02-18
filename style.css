@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.header {
+    background-color: #BBB;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.295);
+}
+
+
+.nav {
+    margin-top: 100px;
+}
+
+.nav > ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.link {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+#banner {
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.titulo {
+    text-align: center;
+    font-weight: normal;
+    font-size: 2em;
+    margin: 0;
+    padding: 2em 0 1em;
+}
+
+.about {
+    background-color: #FEFEFE;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.596);
+}
+
+.about, .local, .conteudo-beneficios, .video {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 0 3em;
+}
+
+.local {
+    clear: left;
+}
+
+.local p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios, .video-container {
+    background-color: #888;
+}
+
+.div-local {
+    background-image: linear-gradient(#FEFEFE, #888888);
+}
+
+.conteudo-beneficios ul {
+    list-style: none;
+    width: 40%;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.conteudo-beneficios li:before {
+    content: "★";
+}
+
+#beneficios-img {
+    width: 60%;
+    margin: 0;
+}
+
+.conteudo-beneficios ul li {
+    line-height: 1.5;
+
+}
+
+@media screen and (max-width:480px) {
+
+    main p, .mapa, .video, .conteudo-beneficios{
+        padding: 10px;
+        text-align: justify;
+    }
+    .logo {
+        margin: auto;
+    }
+    nav {
+        display: none;
+    }
+
+   .conteudo-beneficios ul, .conteudo-beneficios img {
+       width: 100%;
+   }
+
+}
+
+
+footer {
+    background: url(imagens/bg.jpg);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer > img {
+    width: 200px;
+}
+

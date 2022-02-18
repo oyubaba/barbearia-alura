@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contato.css">
-    <link rel="stylesheet" href="produtos.css">
+    
 </head>
 <body>
     <header class="header">
         <img src="imagens/logo.png" alt="">
         <nav class="nav">
             <ul>
-                <li class="link"><a href="#">Home </a></li>
-                <li class="link"><a href="produtos.html">Produtos </a></li>
+                <li class="link"><a href="index.html">Home </a></li>
+                <li class="link"><a href="produtos.html">Produtos</a></li>
                 <li class="link"><a href="#">Contato </a></li>
             </ul>
         </nav>
@@ -22,58 +23,63 @@
 
     <main class="contato-main">
         <form action="">
-            <div class="text">
+            <fieldset class="text">
                 <label for="name">Nome</label>
-                <input type="text" id="name">
-                <label for="email">Email</label>
-                <input type="text" id="email">
-                <label for="phone">Telefone</label>
-                <input type="text" id="phone">
+                <input type="text" id="name" required>
+                <label for="email" >Email</label>
+                <input type="text" id="email" placeholder="seuemail@dominio.com" required>
+                <label for="phone" >Telefone</label>
+                <input type="text" id="phone" placeholder="(XX) XXXXX-XXXX" required>
                 <label for="text">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="54" rows="5"></textarea>
-            </div>
+                <textarea name="mensagem" id="mensagem" cols="54" rows="5" required></textarea>
+            </fieldset>
 
-            <div class="radio">
-                <p>Como prefere nosso contato?</p>
-                <label for="email-radio"><input type="radio" value="email-radio" id="email-radio" name="contato"> Email</label><br>
+            <fieldset class="radio">
+                <legend>Como prefere nosso contato?</legend>
+                <label for="email-radio"><input type="radio" value="email-radio" id="email-radio" name="contato" checked> Email</label><br>
                 <label for="call-radio"><input type="radio" value="call-radio" id="call-radio" name="contato"> Ligação</label><br>
                 <label for="whats-radio"><input type="radio" value="whats-radio" id="whats-radio" name="contato"> WhatsApp</label>
-            </div>
+            </fieldset>
 
-            <div class="select">
-                <p>Qual horário prefere ser atendido?</p>
+            <fieldset class="select">
+                <legend>Qual horário prefere ser atendido?</legend>
                 <select name="time-preference" id="time-preference">
                     <option value="manha">Manhã</option>
                     <option value="tarde">Tarde</option>
                     <option value="noite">Noite</option>
                 </select>
-            </div>
+            </fieldset>
             
-            <div class="checkbox">
+            <fieldset class="checkbox">
                 <label for="email-news"><input type="checkbox" id="checkbox" checked> Gostaria de receber novidades por Email?</label>
-            </div>
+            </fieldset>
 
-            <input type="submit" value="Enviar" id="enviar">
+            <input type="submit" value="Enviar" class="enviar">
         </form>
 
         <table>
             <p>Horário de funcionamento:</p>
-            <tr id="titulos">
-                <th>Dias</th>
-                <th>Horarios</th>
+
+            <thead>
+                <tr>
+                    <th>Dias</th>
+                    <th>Horarios</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Segunda</td>
+                <td>8h - 18h</td>
             </tr>
             <tr>
-                <th>Segunda</th>
-                <th>8h - 18h</th>
+                <td>Quarta</td>
+                <td>8h - 18h</td>
             </tr>
             <tr>
-                <th>Quarta</th>
-                <th>8h - 18h</th>
+                <td>Sexta</td>
+                <td>8h - 18h</td>
             </tr>
-            <tr>
-                <th>Sexta</th>
-                <th>8h - 18h</th>
-            </tr>
+        </tbody>
         </table>
     </main>
 

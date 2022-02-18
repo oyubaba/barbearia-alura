@@ -1,33 +1,4 @@
-body {
-    margin: 0;
-}
 
-.header {
-    background-color: #BBB;
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav {
-    margin-top: 100px;
-}
-
-.nav > ul{
-    list-style: none;
-    display: flex;
-}
-
-.nav > ul > li > a {
-    text-decoration: none;
-    color: black;
-}
-
-.link {
-    font-size: 20px;
-    font-weight: bolder;
-    margin-right: 15px;
-    text-transform: uppercase;
-}
 
 .produtos {
     display: flex;
@@ -55,16 +26,8 @@ body {
 
 .item:hover {
     border: 2px solid #c78c19;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
-footer {
-    background: url(imagens/bg.jpg);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 70px;
-}
-
-footer > img {
-    width: 100px;
-}

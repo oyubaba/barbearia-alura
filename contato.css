@@ -3,8 +3,12 @@
     margin: 40px auto;
 }
 
+fieldset {
+    border: none;
+}
+
 .contato-main form label, 
-.contato-main form p{
+.contato-main form fieldset{
     font-size: 20px;
 }
 
@@ -19,21 +23,28 @@
     display: block;
 }
 
-.radio p, 
-.select p, 
+.radio, 
+.select, 
 .checkbox{
     margin: 25px 0 0 ;
 }
 
-#enviar {
-    background-color: #c78c19;
+.enviar {
+    background-color: orange;
     color: #fff;
     font-size: 20px;
     border: none;
     border-radius: 7px;
-    width: 300px;
-    height: 50px;
+    width: 40%;
+    padding: 15px 0;
     margin: 30px 0;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.2);
 }
 
 table {
@@ -41,11 +52,14 @@ table {
 }
 
 table th {
+    background-color: rgb(141, 141, 141);
+    color: white;
+    font-weight: bolder;
     border: 1px solid black;
-    padding: 5px 10px;
-    width: 80px;
+    padding: 8px 15px;
 }
 
-table #titulos {
-    background-color: #BBB;
+table td {
+    border: 1px solid black;
+    padding: 8px 15px;
 }
